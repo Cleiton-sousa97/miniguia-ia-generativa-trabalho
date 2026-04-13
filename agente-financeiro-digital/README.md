@@ -56,10 +56,9 @@ No Google Colab:
 
 ## ▶️ Como Usar
 
-**1. Gravação de Áudio
+**1. Gravação de Áudio**
 
  ```bash
- python
 from IPython.display import Audio, display, Javascript
 from google.colab import output
 from base64 import b64decode
@@ -101,9 +100,9 @@ record_file = record()
 display(Audio(record_file, autoplay=False))
 ```
 
-**2. Reconhecimento de Fala com Whisper
-python
-  
+**2. Reconhecimento de Fala com Whisper**
+
+ ```bash
 import whisper
 
 language = "pt"
@@ -112,8 +111,11 @@ model = whisper.load_model("small")
 result = model.transcribe(record_file, fp16=False, language=language)
 transcription = result["text"]
 print("Pergunta do usuário:", transcription)
-3. Integração com ChatGPT
-python
+```
+
+**3. Integração com ChatGPT**
+
+ ```bash
 from openai import OpenAI
 from google.colab import userdata
 
@@ -129,8 +131,11 @@ response = client.chat.completions.create(
 
 chatgpt_response = response.choices[0].message.content
 print("Resposta do Agente Financeiro:", chatgpt_response)
-4. Conversão em Voz com gTTS
-python
+```
+
+**4. Conversão em Voz com gTTS**
+
+ ```bash
 from gtts import gTTS
 from IPython.display import Audio, display
 
@@ -139,25 +144,26 @@ response_audio = "/content/response_audio.wav"
 gtts_object.save(response_audio)
 
 display(Audio(response_audio, autoplay=True))
-🎯 Objetivo
-O projeto busca criar um assistente financeiro digital que:
+```
 
-Responda dúvidas sobre investimentos e produtos bancários.
+---
 
-Ofereça explicações acessíveis e educativas.
+##🎯 Objetivo
+   - O projeto busca criar um assistente financeiro digital que:
+   - Responda dúvidas sobre investimentos e produtos bancários.
+   - Ofereça explicações acessíveis e educativas.
+   - Permita interação por voz, tornando a experiência mais natural.
 
-Permita interação por voz, tornando a experiência mais natural.
+---
 
-📌 Observações
-O uso da API da OpenAI requer uma chave válida e créditos disponíveis.
+##📌 Observações
+   - O uso da API da OpenAI requer uma chave válida e créditos disponíveis.
+   - Para evitar expor sua chave, utilize Secrets do Google Colab.
+   - Este projeto é voltado para fins educacionais e demonstrativos.
 
-Para evitar expor sua chave, utilize Secrets do Google Colab.
+##👨‍💻 Autor
+   - Projeto desenvolvido por Cleiton Sousa.
 
-Este projeto é voltado para fins educacionais e demonstrativos.
-
-👨‍💻 Autor
-Projeto desenvolvido por Cleiton Sousa.
-Repositório: Agente Financeiro Digital
 
 
    
