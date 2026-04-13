@@ -52,9 +52,14 @@ No Google Colab:
   Vá em Secrets (ícone de chave no menu lateral).
   Crie um Secret chamado OPENAI_API_KEY com sua chave.
 
-▶️ Como Usar
-1. Gravação de Áudio
-python
+---
+
+## ▶️ Como Usar
+
+**1. Gravação de Áudio
+
+ ```bash
+ python
 from IPython.display import Audio, display, Javascript
 from google.colab import output
 from base64 import b64decode
@@ -94,8 +99,11 @@ def record(sec=5):
 print('Ouvindo...\n')
 record_file = record()
 display(Audio(record_file, autoplay=False))
-2. Reconhecimento de Fala com Whisper
+```
+
+**2. Reconhecimento de Fala com Whisper
 python
+  
 import whisper
 
 language = "pt"
