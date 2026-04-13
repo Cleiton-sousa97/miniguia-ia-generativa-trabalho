@@ -148,7 +148,7 @@ display(Audio(response_audio, autoplay=True))
 
 ---
 
-##🎯 Objetivo
+## 🎯 Objetivo
    - O projeto busca criar um assistente financeiro digital que:
    - Responda dúvidas sobre investimentos e produtos bancários.
    - Ofereça explicações acessíveis e educativas.
@@ -156,12 +156,12 @@ display(Audio(response_audio, autoplay=True))
 
 ---
 
-##📌 Observações
+## 📌 Observações
    - O uso da API da OpenAI requer uma chave válida e créditos disponíveis.
    - Para evitar expor sua chave, utilize Secrets do Google Colab.
    - Este projeto é voltado para fins educacionais e demonstrativos.
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
    - Projeto desenvolvido por Cleiton Sousa.
 
 
